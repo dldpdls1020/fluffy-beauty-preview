@@ -42,12 +42,14 @@ document.addEventListener('keydown', event => {
   if (event.key === 'ArrowRight') showGalleryImage(activeGalleryIndex + 1);
 });
 
-let touchStartX = 0;
-galleryDialog.addEventListener('touchstart', event => {
+let touchStartX = null;
+galleryLarge.addEventListener('touchstart', event => {
   touchStartX = event.changedTouches[0].screenX;
 }, { passive: true });
-galleryDialog.addEventListener('touchend', event => {
+galleryLarge.addEventListener('touchend', event => {
+  if (touchStartX === null) return;
   const distance = event.changedTouches[0].screenX - touchStartX;
+  touchStartX = null;
   if (Math.abs(distance) < 45) return;
   showGalleryImage(activeGalleryIndex + (distance < 0 ? 1 : -1));
 }, { passive: true });
