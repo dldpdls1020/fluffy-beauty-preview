@@ -10,14 +10,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
   <div class="draft-bar">대표 검토용 초안 · 가격 조건·예약 링크 최종 확인 전</div>
   <header class="site-header">
     <a class="wordmark" href="#top" aria-label="홈으로">Fluffy <span>Beauty</span></a>
     <nav aria-label="주 메뉴">
-      <a href="#signature">시그니처</a><a href="#approach">디자인 과정</a><a href="#faq">자주 묻는 질문</a>
+      <a href="#signature">시그니처</a><a href="#portfolio">시술 갤러리</a><a href="#space">공간</a><a href="#faq">자주 묻는 질문</a>
     </nav>
     <a class="header-cta" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">상담하기 <span aria-hidden="true">↗</span></a>
   </header>
@@ -63,29 +63,40 @@
     <section class="approach section" id="approach">
       <div class="section-kicker"><span>03</span><span>OUR APPROACH</span></div>
       <div class="approach-head"><p class="eyebrow">A DESIGN MADE FOR YOU</p><h2>같은 눈썹을<br>그리지 않습니다.</h2><p>현재 눈썹과 평소 메이크업, 원하는 분위기를 확인한 뒤 디자인합니다. 시작 전에 스케치를 함께 보고 조율하는 과정이 중요합니다.</p></div>
-      <div class="steps"><div><span>01</span><h3>상담</h3><p>현재 눈썹 상태와 고민, 원하는 이미지를 듣습니다.</p></div><div><span>02</span><h3>디자인</h3><p>골격과 눈매에 맞춰 스케치하고 함께 확인합니다.</p></div><div><span>03</span><h3>시술</h3><p>확인한 디자인을 바탕으로 자연스러운 결감을 표현합니다.</p></div><div><span>04</span><h3>안내</h3><p>시술 후 관리 방법과 주의사항을 안내합니다.</p></div></div>
+      <div class="steps"><div class="reveal"><span>01</span><h3>상담</h3><p>현재 눈썹 상태와 고민, 원하는 이미지를 듣습니다.</p></div><div class="reveal"><span>02</span><h3>디자인</h3><p>골격과 눈매에 맞춰 스케치하고 함께 확인합니다.</p></div><div class="reveal"><span>03</span><h3>시술</h3><p>확인한 디자인을 바탕으로 자연스러운 결감을 표현합니다.</p></div><div class="reveal"><span>04</span><h3>안내</h3><p>시술 후 관리 방법과 주의사항을 안내합니다.</p></div></div>
+      <div class="process-feature reveal"><div class="process-photo"><img src="procedure-photo.jpeg" alt="김민선 원장이 고객의 눈썹을 시술하는 모습. 고객 얼굴은 가려져 있습니다" loading="lazy"></div><div class="process-caption"><span>THE CARE BEHIND EACH DETAIL</span><h3>한 올의 결까지,<br>차분하게.</h3><p>제공받은 실제 시술 장면입니다. 상담과 디자인을 거쳐 확인한 방향으로 진행합니다.</p></div></div>
     </section>
 
     <section class="portfolio section" id="portfolio">
       <div class="section-kicker"><span>04</span><span>REAL WORK</span></div>
-      <div class="portfolio-intro"><div><p class="eyebrow">REAL CLIENT WORK</p><h2>말보다 분명한 건<br><em>실제 눈썹의 결.</em></h2></div><p>플러피뷰티에서 제공한 눈썹 시술 사진입니다. 디자인과 색감은 원래 눈썹과 피부 상태에 따라 달라집니다.</p></div>
+      <div class="portfolio-intro"><div><p class="eyebrow">BROW GALLERY</p><h2>말보다 분명한 건<br><em>실제 눈썹의 결.</em></h2></div><p>플러피뷰티에서 제공한 눈썹 사진을 모았습니다. 사진을 누르면 결을 더 가까이 볼 수 있습니다. 디자인과 색감은 원래 눈썹과 피부 상태에 따라 달라집니다.</p></div>
       <div class="portfolio-gallery">
-        <figure><img src="brow-result-01.jpeg" alt="눈썹 시술 전후를 위아래로 비교한 사진" loading="lazy"><figcaption><span>01 / BROW DESIGN</span><strong>섬세한 결의 변화</strong></figcaption></figure>
-        <figure><img src="brow-result-02.jpeg" alt="자연스러운 눈썹 시술 전후 비교 사진" loading="lazy"><figcaption><span>02 / BROW DESIGN</span><strong>얼굴에 어울리는 선</strong></figcaption></figure>
-        <figure><img src="brow-result-03.jpeg" alt="눈썹 밀도를 살린 시술 전후 비교 사진" loading="lazy"><figcaption><span>03 / BROW DESIGN</span><strong>가볍게 채운 밀도</strong></figcaption></figure>
+        <button type="button" class="gallery-item reveal"><span class="gallery-image"><img src="brow-result-01.jpeg" alt="위아래로 배치된 눈썹 디자인 비교 사진" loading="lazy"></span><span class="gallery-meta"><small>01 / BROW DESIGN</small><strong>섬세한 결의 변화</strong><span>크게 보기 ↗</span></span></button>
+        <button type="button" class="gallery-item reveal"><span class="gallery-image"><img src="brow-result-02.jpeg" alt="자연스러운 눈썹 결을 보여주는 비교 사진" loading="lazy"></span><span class="gallery-meta"><small>02 / BROW DESIGN</small><strong>얼굴에 어울리는 선</strong><span>크게 보기 ↗</span></span></button>
+        <button type="button" class="gallery-item reveal"><span class="gallery-image"><img src="brow-result-03.jpeg" alt="눈썹 밀도의 변화를 보여주는 비교 사진" loading="lazy"></span><span class="gallery-meta"><small>03 / BROW DESIGN</small><strong>가볍게 채운 밀도</strong><span>크게 보기 ↗</span></span></button>
+        <button type="button" class="gallery-item reveal"><span class="gallery-image"><img src="brow-result-04.jpeg" alt="눈썹 모양을 위아래로 비교한 클로즈업 사진" loading="lazy"></span><span class="gallery-meta"><small>04 / BROW DESIGN</small><strong>부드러운 눈썹 라인</strong><span>크게 보기 ↗</span></span></button>
+        <button type="button" class="gallery-item reveal"><span class="gallery-image"><img src="brow-result-05.jpeg" alt="눈썹 결이 보이는 두 장의 클로즈업 사진" loading="lazy"></span><span class="gallery-meta"><small>05 / BROW DETAIL</small><strong>결이 살아 있는 표현</strong><span>크게 보기 ↗</span></span></button>
+        <button type="button" class="gallery-item reveal"><span class="gallery-image"><img src="brow-result-06.jpeg" alt="남성 눈썹 디자인을 비교한 사진" loading="lazy"></span><span class="gallery-meta"><small>06 / BROW DESIGN</small><strong>자연스러운 남성 눈썹</strong><span>크게 보기 ↗</span></span></button>
+        <button type="button" class="gallery-item reveal"><span class="gallery-image"><img src="brow-result-07.jpeg" alt="눈썹 밀도와 라인을 비교한 사진" loading="lazy"></span><span class="gallery-meta"><small>07 / BROW DESIGN</small><strong>차분한 인상의 완성</strong><span>크게 보기 ↗</span></span></button>
+        <button type="button" class="gallery-item reveal"><span class="gallery-image"><img src="brow-result-08.jpeg" alt="마스크를 쓴 고객의 눈썹 디자인 사진" loading="lazy"></span><span class="gallery-meta"><small>08 / BROW DETAIL</small><strong>얼굴에 맞춘 균형</strong><span>크게 보기 ↗</span></span></button>
       </div>
+      <p class="gallery-hint">사진마다 보이는 색감과 결과는 촬영 환경 및 개인 상태에 따라 다를 수 있습니다.</p>
     </section>
 
     <section class="director section" id="director"><div class="section-kicker"><span>05</span><span>THE DIRECTOR</span></div><div class="director-grid"><div class="director-visual"><img src="director-photo.jpeg" alt="플러피뷰티 김민선 원장 프로필 사진" loading="lazy"><span>DIRECTOR · KIM MINSUN</span></div><div class="director-copy"><p class="eyebrow">DIRECTOR · KIM MINSUN</p><h2>작은 차이를<br>오래 바라봅니다.</h2><p>눈썹의 모양뿐 아니라 한 사람의 얼굴과 분위기를 함께 봅니다.</p><p>김민선 원장은 골격에 맞는 디자인과 편안한 상담 분위기를 중요하게 생각합니다. 원하는 느낌과 걱정되는 점을 충분히 이야기한 뒤 디자인을 함께 정합니다.</p><span>김민선 원장</span></div></div></section>
 
-    <section class="price section" id="price"><div class="section-kicker"><span>06</span><span>PRICE</span></div><div class="price-grid"><div><p class="eyebrow">SIGNATURE OFFER</p><h2>부담은 낮추고,<br>디자인은 섬세하게.</h2><p>헤어스트로크 이벤트 가격은 미팅 기록을 바탕으로 표시한 초안입니다. 적용 기간과 포함 항목은 최종 확인 후 공개합니다.</p></div><div class="price-card"><div><span>HAIR STROKE</span><span>EVENT</span></div><h3>헤어스트로크</h3><p class="price-amount">20<span>만원</span></p><p class="price-condition">이벤트 적용 조건 최종 확인 중</p><a class="button button-dark" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">시술 상담하기 <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="space section" id="space"><div class="section-kicker"><span>06</span><span>OUR SPACE</span></div><div class="space-head"><div><p class="eyebrow">COME AS YOU ARE</p><h2>처음 방문하는 날도<br><em>편안한 마음으로.</em></h2></div><p>플러피뷰티에서 제공한 실제 매장 사진입니다. 상담 공간부터 시술 공간까지 미리 둘러보세요.</p></div><div class="space-gallery"><figure class="space-card space-card-large reveal"><img src="studio-room.jpeg" alt="따뜻한 조명과 시술 베드가 있는 플러피뷰티 공간" loading="lazy"><figcaption>01 / 시술 공간</figcaption></figure><figure class="space-card reveal"><img src="studio-consultation.jpeg" alt="청록색 벽 앞 테이블과 의자가 놓인 상담 공간" loading="lazy"><figcaption>02 / 상담 공간</figcaption></figure><figure class="space-card reveal"><img src="studio-entry.jpeg" alt="조명과 계단이 보이는 플러피뷰티 입구" loading="lazy"><figcaption>03 / 입구</figcaption></figure></div></section>
 
-    <section class="faq section" id="faq"><div class="section-kicker"><span>07</span><span>FAQ</span></div><div class="faq-grid"><div><p class="eyebrow">GOOD TO KNOW</p><h2>궁금한 건<br>미리 확인하세요.</h2></div><div class="faq-list"><details><summary>너무 진하게 보이면 어떡하죠?</summary><p>원하는 분위기와 현재 눈썹 상태를 먼저 확인하고, 디자인 스케치를 함께 조율합니다. 시술 직후의 색감과 회복 과정은 개인마다 다를 수 있어 상담에서 안내합니다.</p></details><details><summary>통증이 심한 편인가요?</summary><p>느끼는 정도는 개인차가 있습니다. 상담에서 걱정되는 점을 먼저 말씀해 주세요. 진행 중에도 상태를 확인합니다.</p></details><details><summary>유지기간은 얼마나 되나요?</summary><p>피부 상태와 생활 습관, 관리 방법에 따라 차이가 큽니다. 일률적인 기간을 약속하기보다 개인 상태에 맞춰 상담해 드립니다.</p></details><details><summary>기존 눈썹 잔흔이 있어도 가능한가요?</summary><p>잔흔의 색과 위치, 피부 상태에 따라 디자인 가능 범위가 달라집니다. 현재 눈썹 사진을 보내주시면 상담에 도움이 됩니다.</p></details></div></div></section>
+    <section class="price section" id="price"><div class="section-kicker"><span>07</span><span>PRICE</span></div><div class="price-grid"><div><p class="eyebrow">SIGNATURE OFFER</p><h2>부담은 낮추고,<br>디자인은 섬세하게.</h2><p>헤어스트로크 이벤트 가격은 미팅 기록을 바탕으로 표시한 초안입니다. 적용 기간과 포함 항목은 최종 확인 후 공개합니다.</p></div><div class="price-card"><div><span>HAIR STROKE</span><span>EVENT</span></div><h3>헤어스트로크</h3><p class="price-amount">20<span>만원</span></p><p class="price-condition">이벤트 적용 조건 최종 확인 중</p><a class="button button-dark" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">시술 상담하기 <span aria-hidden="true">↗</span></a></div></div></section>
+
+    <section class="faq section" id="faq"><div class="section-kicker"><span>08</span><span>FAQ</span></div><div class="faq-grid"><div><p class="eyebrow">GOOD TO KNOW</p><h2>궁금한 건<br>미리 확인하세요.</h2></div><div class="faq-list"><details><summary>너무 진하게 보이면 어떡하죠?</summary><p>원하는 분위기와 현재 눈썹 상태를 먼저 확인하고, 디자인 스케치를 함께 조율합니다. 시술 직후의 색감과 회복 과정은 개인마다 다를 수 있어 상담에서 안내합니다.</p></details><details><summary>통증이 심한 편인가요?</summary><p>느끼는 정도는 개인차가 있습니다. 상담에서 걱정되는 점을 먼저 말씀해 주세요. 진행 중에도 상태를 확인합니다.</p></details><details><summary>유지기간은 얼마나 되나요?</summary><p>피부 상태와 생활 습관, 관리 방법에 따라 차이가 큽니다. 일률적인 기간을 약속하기보다 개인 상태에 맞춰 상담해 드립니다.</p></details><details><summary>기존 눈썹 잔흔이 있어도 가능한가요?</summary><p>잔흔의 색과 위치, 피부 상태에 따라 디자인 가능 범위가 달라집니다. 현재 눈썹 사진을 보내주시면 상담에 도움이 됩니다.</p></details></div></div></section>
 
     <section class="contact section" id="contact"><div class="contact-inner"><p class="eyebrow">LET'S TALK ABOUT YOUR BROWS</p><h2>내 얼굴에 어울리는 결,<br><em>함께 찾아볼까요?</em></h2><p>시술이 처음이어도 괜찮습니다. 지금 고민과 원하는 분위기부터 편하게 이야기해 주세요.</p><a class="button button-cream" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">카카오채널에서 상담하기 <span aria-hidden="true">↗</span></a><small>직접 예약 링크는 확인 후 연결합니다.</small></div></section>
   </main>
 
   <footer><div class="footer-main"><div><a class="wordmark" href="#top">Fluffy <span>Beauty</span></a><p>김민선 원장의 자연스러운 눈썹 디자인<br>경기 양주시 화합로1325번길 123-16 향빌딩 2층<br>운영시간 11:00–20:00 · 휴무일 확인 중</p></div><div><a href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">KAKAO CHANNEL ↗</a><a href="https://www.instagram.com/fluffy_pmu/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="#top">BACK TO TOP ↑</a></div></div><div class="footer-bottom"><span>© 2026 FLUFFY BEAUTY. PREVIEW DRAFT.</span><span>AI 연출 영상과 제공받은 실제 사진을 사용했습니다.</span></div></footer>
+  <dialog class="gallery-dialog" id="gallery-dialog" aria-label="눈썹 사진 갤러리"><div class="gallery-dialog-inner"><button type="button" class="gallery-close" aria-label="갤러리 닫기">×</button><div class="gallery-stage"><button type="button" class="gallery-arrow gallery-prev" aria-label="이전 사진">‹</button><img id="gallery-large" alt=""><button type="button" class="gallery-arrow gallery-next" aria-label="다음 사진">›</button></div><div class="gallery-dialog-caption"><span id="gallery-count" aria-live="polite"></span><p id="gallery-caption"></p><small>좌우 버튼 또는 화면 넘기기로 다른 사진을 볼 수 있습니다.</small></div></div></dialog>
   <a class="mobile-cta" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">눈썹 상담하기 <span aria-hidden="true">↗</span></a>
+  <script src="site.js?v=1" defer></script>
 </body>
 </html>
