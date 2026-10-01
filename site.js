@@ -16,14 +16,19 @@ function showGalleryImage(index) {
   galleryCount.textContent = `${activeGalleryIndex + 1} / ${galleryItems.length}`;
 }
 
+function openGallery(index, opener) {
+  activeGalleryOpener = opener;
+  showGalleryImage(index);
+  galleryDialog.showModal();
+  document.body.classList.add('gallery-open');
+  galleryDialog.querySelector('.gallery-close').focus();
+}
+
 galleryItems.forEach((item, index) => {
-  item.addEventListener('click', () => {
-    activeGalleryOpener = item;
-    showGalleryImage(index);
-    galleryDialog.showModal();
-    document.body.classList.add('gallery-open');
-    galleryDialog.querySelector('.gallery-close').focus();
-  });
+  item.addEventListener('click', () => openGallery(index, item));
+});
+document.querySelectorAll('.proof-shot').forEach(item => {
+  item.addEventListener('click', () => openGallery(Number(item.dataset.galleryIndex), item));
 });
 
 galleryDialog.querySelector('.gallery-close').addEventListener('click', () => galleryDialog.close());
@@ -57,20 +62,20 @@ galleryLarge.addEventListener('touchend', event => {
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 if ('IntersectionObserver' in window && !reducedMotion.matches) {
   const animatedSelectors = [
-    '.hero-copy > *', '.hero-art', '.hero-bottom',
+    '.proof-preview-head > *', '.proof-shot', '.proof-note',
     '.section-kicker', '.intro-grid > div', '.signature-card',
-    '.worries-grid > div:first-child', '.worries-end', '.worry-list p',
+    '.worries-grid > div:first-child', '.worries-end > *', '.worry-list p',
     '.approach-head > *', '.steps > div', '.process-feature',
     '.portfolio-intro > *', '.gallery-item', '.gallery-hint', '.gallery-invite > *',
     '.director-visual', '.director-copy > *',
     '.space-head > *', '.space-card',
     '.price-grid > div', '.faq-grid > div:first-child', '.faq-list details',
-    '.contact-inner > *'
+    '.contact-inner > *:not(.contact-steps)', '.contact-steps > *'
   ];
   document.querySelectorAll(animatedSelectors.join(',')).forEach(element => {
     element.classList.add('reveal');
   });
-  document.querySelectorAll('.hero-art, .process-feature, .director-visual, .space-card').forEach(element => {
+  document.querySelectorAll('.process-feature, .director-visual, .space-card').forEach(element => {
     element.classList.add('reveal-photo');
   });
   const revealElements = [...document.querySelectorAll('.reveal')];

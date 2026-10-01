@@ -10,27 +10,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
-  <div class="draft-bar">대표 검토용 초안 · 가격 조건·예약 링크 최종 확인 전</div>
+  <div class="draft-bar" id="top">대표 검토용 초안 · 가격 조건·예약 링크 최종 확인 전</div>
   <header class="site-header">
     <a class="wordmark" href="#top" aria-label="홈으로">Fluffy <span>Beauty</span></a>
     <nav aria-label="주 메뉴">
       <a href="#signature">시그니처</a><a href="#portfolio">시술 갤러리</a><a href="#space">공간</a><a href="#faq">자주 묻는 질문</a>
     </nav>
-    <a class="header-cta" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">상담하기 <span aria-hidden="true">↗</span></a>
+    <a class="header-cta" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">카카오 상담하기 <span aria-hidden="true">↗</span></a>
   </header>
 
-  <main id="top">
+  <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-inner">
         <div class="hero-copy">
-          <p class="eyebrow">NATURAL BROW DESIGN · BY MINSUN</p>
+          <p class="eyebrow">양주 · 김민선 원장의 1:1 눈썹 디자인</p>
           <h1 id="hero-title">가까이서 봐도<br><em>자연스럽게.</em></h1>
-          <p class="hero-intro">원래 내 눈썹의 결을 살리면서<br>얼굴의 분위기에 맞게 한 올씩 디자인합니다.</p>
-          <a class="button button-dark" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">나에게 맞는 눈썹 상담하기 <span aria-hidden="true">↗</span></a>
-          <p class="hero-small">헤어스트로크 · 플러피브로우 · 1:1 디자인</p>
+          <p class="hero-intro">매일 눈썹을 그리며 고민했다면,<br>지금 가진 결부터 살펴보고 얼굴에 맞게 디자인해 보세요.</p>
+          <div class="hero-actions"><a class="button button-dark" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">내 눈썹 사진으로 상담받기 <span aria-hidden="true">↗</span></a><a class="hero-results-link" href="#proof">실제 시술 사진 보기 <span aria-hidden="true">↓</span></a></div>
+          <p class="hero-small">헤어스트로크 · 플러피브로우 · 상담 후 디자인 확인</p>
         </div>
         <div class="hero-art">
           <span class="hero-circle" aria-hidden="true"></span>
@@ -40,6 +40,12 @@
         </div>
       </div>
       <div class="hero-bottom"><span>PERSONALIZED BROW ARTISTRY</span><a href="#signature">SCROLL TO EXPLORE ↓</a></div>
+    </section>
+
+    <section class="proof-preview" id="proof" aria-labelledby="proof-title">
+      <div class="proof-preview-head"><div><p class="eyebrow">REAL BROW RESULTS</p><h2 id="proof-title">눈썹을 맡기기 전,<br><em>실제 사진을 보세요.</em></h2></div><div class="proof-preview-copy"><p>플러피뷰티에서 제공한 실제 눈썹 사진입니다. 사진을 눌러 결을 가까이 보고, 마음에 드는 느낌을 상담할 때 알려주세요.</p><a href="#portfolio">시술 사진 8장 모두 보기 <span aria-hidden="true">↗</span></a></div></div>
+      <div class="proof-preview-grid"><button type="button" class="proof-shot" data-gallery-index="0" aria-label="실제 눈썹 사진 1번 크게 보기"><img src="brow-result-01.jpeg" alt="위아래로 배치된 눈썹 디자인 비교 사진" loading="lazy"><span>01 <strong>섬세한 결의 변화</strong> ↗</span></button><button type="button" class="proof-shot" data-gallery-index="1" aria-label="실제 눈썹 사진 2번 크게 보기"><img src="brow-result-02.jpeg" alt="자연스러운 눈썹 결을 보여주는 비교 사진" loading="lazy"><span>02 <strong>얼굴에 어울리는 선</strong> ↗</span></button><button type="button" class="proof-shot" data-gallery-index="2" aria-label="실제 눈썹 사진 3번 크게 보기"><img src="brow-result-03.jpeg" alt="눈썹 밀도의 변화를 보여주는 비교 사진" loading="lazy"><span>03 <strong>가볍게 채운 밀도</strong> ↗</span></button></div>
+      <p class="proof-note">사진의 색감과 결과는 촬영 환경, 원래 눈썹과 피부 상태에 따라 다를 수 있습니다.</p>
     </section>
 
     <section class="intro section" id="signature">
@@ -57,7 +63,7 @@
     <section class="worries section" id="worries">
       <div class="section-kicker"><span>02</span><span>YOUR CONCERNS</span></div>
       <div class="worries-grid"><div><p class="eyebrow">IF THIS SOUNDS FAMILIAR</p><h2>예약하기 전,<br>이런 생각이 든다면.</h2></div><div class="worry-list"><p><span>01</span>너무 진하고 어색하게 남지는 않을까?</p><p><span>02</span>내 얼굴에는 어떤 디자인이 어울릴까?</p><p><span>03</span>기존 잔흔이 있어도 가능할까?</p><p><span>04</span>통증이나 유지기간은 어느 정도일까?</p></div></div>
-      <p class="worries-end">상담에서 먼저 확인하고, 내 얼굴에 어울리는 방향을 함께 찾습니다.</p>
+      <div class="worries-end"><p>걱정되는 부분부터 먼저 이야기해 주세요.<br>현재 눈썹을 보고 어울리는 방향을 함께 찾습니다.</p><a href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">내 눈썹 상태 상담하기 <span aria-hidden="true">↗</span></a></div>
     </section>
 
     <section class="approach section" id="approach">
@@ -92,12 +98,12 @@
 
     <section class="faq section" id="faq"><div class="section-kicker"><span>08</span><span>FAQ</span></div><div class="faq-grid"><div><p class="eyebrow">GOOD TO KNOW</p><h2>궁금한 건<br>미리 확인하세요.</h2></div><div class="faq-list"><details><summary>너무 진하게 보이면 어떡하죠?</summary><p>원하는 분위기와 현재 눈썹 상태를 먼저 확인하고, 디자인 스케치를 함께 조율합니다. 시술 직후의 색감과 회복 과정은 개인마다 다를 수 있어 상담에서 안내합니다.</p></details><details><summary>통증이 심한 편인가요?</summary><p>느끼는 정도는 개인차가 있습니다. 상담에서 걱정되는 점을 먼저 말씀해 주세요. 진행 중에도 상태를 확인합니다.</p></details><details><summary>유지기간은 얼마나 되나요?</summary><p>피부 상태와 생활 습관, 관리 방법에 따라 차이가 큽니다. 일률적인 기간을 약속하기보다 개인 상태에 맞춰 상담해 드립니다.</p></details><details><summary>기존 눈썹 잔흔이 있어도 가능한가요?</summary><p>잔흔의 색과 위치, 피부 상태에 따라 디자인 가능 범위가 달라집니다. 현재 눈썹 사진을 보내주시면 상담에 도움이 됩니다.</p></details></div></div></section>
 
-    <section class="contact section" id="contact"><div class="contact-inner"><p class="eyebrow">LET'S TALK ABOUT YOUR BROWS</p><h2>내 얼굴에 어울리는 결,<br><em>함께 찾아볼까요?</em></h2><p>시술이 처음이어도 괜찮습니다. 지금 고민과 원하는 분위기부터 편하게 이야기해 주세요.</p><a class="button button-cream" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">카카오채널에서 상담하기 <span aria-hidden="true">↗</span></a><small>직접 예약 링크는 확인 후 연결합니다.</small></div></section>
+    <section class="contact section" id="contact"><div class="contact-inner"><p class="eyebrow">LET'S TALK ABOUT YOUR BROWS</p><h2>내 얼굴에 어울리는 결,<br><em>함께 찾아볼까요?</em></h2><p>처음이라면 눈썹 사진 한 장부터 보내주세요. 원하는 분위기와 걱정되는 점을 듣고 상담을 시작합니다.</p><div class="contact-steps" aria-label="상담 시작 방법"><div><span>01</span><strong>카카오채널 열기</strong></div><div><span>02</span><strong>현재 눈썹 사진 보내기</strong></div><div><span>03</span><strong>원하는 느낌 이야기하기</strong></div></div><a class="button button-cream" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">카카오로 눈썹 상담 시작하기 <span aria-hidden="true">↗</span></a><small>예약 가능 일정과 시술 조건은 상담에서 확인해 주세요.</small></div></section>
   </main>
 
   <footer><div class="footer-main"><div><a class="wordmark" href="#top">Fluffy <span>Beauty</span></a><p>김민선 원장의 자연스러운 눈썹 디자인<br>경기 양주시 화합로1325번길 123-16 향빌딩 2층<br>운영시간 11:00–20:00 · 휴무일 확인 중</p></div><div><a href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">KAKAO CHANNEL ↗</a><a href="https://www.instagram.com/fluffy_pmu/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="#top">BACK TO TOP ↑</a></div></div><div class="footer-bottom"><span>© 2026 FLUFFY BEAUTY. PREVIEW DRAFT.</span><span>AI 연출 영상과 제공받은 실제 사진을 사용했습니다.</span></div></footer>
   <dialog class="gallery-dialog" id="gallery-dialog" aria-label="눈썹 사진 갤러리"><div class="gallery-dialog-inner"><button type="button" class="gallery-close" aria-label="갤러리 닫기">×</button><div class="gallery-stage"><button type="button" class="gallery-arrow gallery-prev" aria-label="이전 사진">‹</button><img id="gallery-large" alt=""><button type="button" class="gallery-arrow gallery-next" aria-label="다음 사진">›</button></div><div class="gallery-dialog-caption"><span id="gallery-count" aria-live="polite"></span><p id="gallery-caption"></p><small>좌우 버튼 또는 화면 넘기기로 다른 사진을 볼 수 있습니다.</small></div></div></dialog>
-  <a class="mobile-cta" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">눈썹 상담하기 <span aria-hidden="true">↗</span></a>
-  <script src="site.js?v=3" defer></script>
+  <a class="mobile-cta" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">카카오로 눈썹 상담하기 <span aria-hidden="true">↗</span></a>
+  <script src="site.js?v=4" defer></script>
 </body>
 </html>
