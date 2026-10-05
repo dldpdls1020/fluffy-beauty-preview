@@ -62,6 +62,7 @@ galleryLarge.addEventListener('touchend', event => {
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 if ('IntersectionObserver' in window && !reducedMotion.matches) {
   const animatedSelectors = [
+    '.event-preview-copy > *', '.event-preview-offer',
     '.proof-preview-head > *', '.proof-shot', '.proof-note',
     '.section-kicker', '.intro-grid > div', '.signature-card',
     '.worries-grid > div:first-child', '.worries-end > *', '.worry-list p',

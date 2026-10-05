@@ -189,3 +189,33 @@ h1 em,h2 em{font-family:'Cormorant Garamond','Noto Serif KR',serif}
 @media(max-width:900px){.proof-preview-head{grid-template-columns:1fr 1fr;gap:25px}.proof-shot img{height:260px}.worries-end{margin-top:54px}}
 @media(max-width:650px){.site-header .header-cta{padding:9px 14px;font-size:10px;gap:9px}.hero-copy .eyebrow{letter-spacing:.13em}.hero-intro br{display:none}.hero-actions{display:block}.hero-actions .button{width:100%;min-height:54px}.hero-results-link{display:inline-block;margin-top:10px;font-size:11px}.hero-small{margin-top:6px}.proof-preview{padding:68px 18px 73px;scroll-margin-top:0}.proof-preview-head{display:block;margin-bottom:26px}.proof-preview h2{font-size:clamp(32px,9vw,42px)}.proof-preview-copy p{font-size:12px;margin-top:17px;margin-bottom:9px}.proof-preview-copy a{font-size:11px}.proof-preview-grid{display:grid;grid-auto-flow:column;grid-auto-columns:min(76vw,300px);grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding:0 0 12px}.proof-shot{scroll-snap-align:start;border-radius:20px}.proof-shot img{height:300px}.proof-shot span{padding:13px 14px 16px;gap:9px}.proof-shot strong{font-size:13px}.proof-note{text-align:left;font-size:10px;line-height:1.6;margin-top:8px}.worries-end{display:block;padding:23px 21px;border-radius:22px}.worries-end p{font-size:15px}.worries-end a{width:100%;margin-top:19px}.contact-steps{grid-template-columns:1fr;gap:8px;margin-bottom:24px}.contact-steps>div{flex-direction:row;align-items:center;gap:16px;padding:12px 16px}.contact-steps strong{font-size:12px}.mobile-cta{font-size:13px}}
 @media(prefers-reduced-motion:reduce){.header-cta,.proof-shot{transition:none}.proof-shot:hover{transform:none}}
+
+/* 헤어스트로크 이벤트를 첫 화면과 주요 상담 지점에 반복 안내 */
+.hero-event-link{display:inline-flex;align-items:center;gap:13px;flex-wrap:wrap;margin-top:22px;padding:13px 18px;border:1px solid #ddc9ba;border-radius:18px;background:rgba(255,250,245,.78);color:#755947;box-shadow:0 10px 26px rgba(135,101,77,.06);transition:transform .25s ease,box-shadow .25s ease}
+.hero-event-link:hover{transform:translateY(-3px);box-shadow:0 15px 30px rgba(135,101,77,.12)}
+.hero-event-link>span{font:600 9px 'Inter',sans-serif;letter-spacing:.14em;color:#ae886d}
+.hero-event-link strong{font:400 15px 'Noto Serif KR',serif;white-space:nowrap}
+.hero-event-link em{font-style:normal;color:#ad795e}
+.hero-event-link small{font-size:10px;color:#9c8170;white-space:nowrap}
+.event-preview{padding:45px max(7vw,30px);background:#ebddd0;scroll-margin-top:76px}
+.event-preview-inner{max-width:1360px;margin:auto;display:grid;grid-template-columns:1fr minmax(300px,.55fr);align-items:center;gap:7vw}
+.event-preview-copy .eyebrow{margin-bottom:15px;color:#9e755c}
+.event-preview h2{font:400 clamp(35px,4.2vw,62px)/1.35 'Noto Serif KR',serif;letter-spacing:-.065em;color:#6e5142;margin:0 0 13px}
+.event-preview h2 em{font-style:normal;color:#a87e66}
+.event-preview-copy>p:last-child{max-width:580px;margin:0;font-size:13px;line-height:1.9;color:#806b5e}
+.event-preview-offer{display:grid;grid-template-columns:1fr auto;align-items:end;gap:3px 14px;padding:25px 29px;border:1px solid rgba(166,125,98,.28);border-radius:28px;background:#fff9f3;box-shadow:0 16px 35px rgba(135,101,77,.07)}
+.event-preview-offer>span{font:500 14px 'Noto Serif KR',serif;color:#755847}
+.event-preview-offer strong{grid-column:1/-1;font:400 clamp(49px,5vw,72px)/1 'Cormorant Garamond',serif;letter-spacing:-.04em;color:#a7795f;white-space:nowrap}
+.event-preview-offer strong small{font:400 17px 'Noto Serif KR',serif;letter-spacing:-.04em;margin-left:3px}
+.event-preview-offer p{grid-column:1/-1;margin:3px 0 0;color:#9a806f;font-size:10px;line-height:1.6}
+.event-preview-offer a{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;margin-top:13px;padding:13px 18px;border-radius:999px;background:#b99379;color:#fff;font-size:12px;font-weight:600;transition:background .25s ease,transform .25s ease}
+.event-preview-offer a:hover{background:#a78068;transform:translateY(-2px)}
+.gallery-event-label{display:block;margin-bottom:11px;color:#aa7c60;font:600 11px 'Inter','Noto Sans KR',sans-serif;letter-spacing:.04em}
+.gallery-event-label small{margin-left:8px;font-size:10px;font-weight:400;color:#aa9484;letter-spacing:0}
+.contact-event{display:flex;align-items:baseline;justify-content:center;gap:11px;flex-wrap:wrap;max-width:690px;margin:23px auto 26px;padding:15px 19px;border:1px solid rgba(142,107,82,.2);border-radius:18px;background:rgba(255,250,245,.45)}
+.contact-event>span{font:600 10px 'Inter',sans-serif;letter-spacing:.13em;color:#a57960}
+.contact-event strong{font:400 16px 'Noto Serif KR',serif;color:#755847}
+.contact-event small{font-size:10px;color:#967967}
+@media(max-width:900px){.hero-event-link{gap:8px}.event-preview-inner{gap:30px;grid-template-columns:1fr 280px}.event-preview-offer{padding:22px}.event-preview-offer strong{font-size:54px}}
+@media(max-width:650px){.hero-event-link{display:flex;margin-top:17px;padding:12px 15px;gap:5px 11px;border-radius:16px}.hero-event-link>span{width:100%;font-size:8px}.hero-event-link strong{font-size:14px}.hero-event-link small{font-size:9px}.event-preview{padding:39px 18px;scroll-margin-top:0}.event-preview-inner{display:block}.event-preview h2{font-size:clamp(31px,8.4vw,41px)}.event-preview-copy>p:last-child{font-size:12px}.event-preview-offer{margin-top:22px;padding:21px;border-radius:23px}.event-preview-offer strong{font-size:61px}.event-preview-offer p{font-size:10px}.gallery-event-label{font-size:10px}.gallery-event-label small{display:block;margin:4px 0 0}.contact-event{display:block;margin:21px auto 23px;padding:13px 17px}.contact-event>span,.contact-event strong,.contact-event small{display:block}.contact-event strong{font-size:15px;margin:4px 0}}
+@media(prefers-reduced-motion:reduce){.hero-event-link,.event-preview-offer a{transition:none}}
