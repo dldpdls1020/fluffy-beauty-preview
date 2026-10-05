@@ -71,8 +71,7 @@ h1 em,h2 em{font-family:'Cormorant Garamond','Noto Serif KR',serif}
 @media(max-width:650px){.wordmark{font-size:30px}.hero-note b{font-size:24px}.portfolio-intro{display:block}.portfolio-intro>p{margin-top:22px;font-size:13px}.portfolio-gallery{grid-template-columns:1fr;gap:16px}.portfolio-gallery img{height:auto;max-height:430px;object-fit:cover}.portfolio-gallery figure{border-radius:24px}.director-visual{height:330px;aspect-ratio:auto}.director-visual img{object-position:center 30%}}
 
 .hero-video{display:block;width:100%;height:100%;object-fit:cover;object-position:center center;background:#efe5dc}
-.video-disclosure{position:absolute;top:15px;left:50%;transform:translateX(-50%);z-index:2;white-space:nowrap;padding:5px 11px;border-radius:999px;background:rgba(255,250,245,.84);color:#806a5a;font-size:9px;font-weight:500;letter-spacing:.05em}
-@media(max-width:650px){.hero-video{object-position:center center}.video-disclosure{top:13px;font-size:8px;padding:4px 9px}}
+@media(max-width:650px){.hero-video{object-position:center center}}
 
 /* 실제 시술 사진 갤러리와 공간 사진 */
 .site-header nav{gap:28px;margin-left:20px}
