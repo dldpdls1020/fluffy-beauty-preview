@@ -61,25 +61,7 @@ galleryLarge.addEventListener('touchend', event => {
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 if ('IntersectionObserver' in window && !reducedMotion.matches) {
-  const animatedSelectors = [
-    '.event-preview-copy > *', '.event-preview-offer',
-    '.proof-preview-head > *', '.proof-shot', '.proof-note',
-    '.section-kicker', '.intro-grid > div', '.signature-card',
-    '.worries-grid > div:first-child', '.worries-end > *', '.worry-list p',
-    '.approach-head > *', '.steps > div', '.process-feature',
-    '.portfolio-intro > *', '.gallery-item', '.gallery-hint', '.gallery-invite > *',
-    '.director-visual', '.director-copy > *',
-    '.space-head > *', '.space-card',
-    '.price-grid > div', '.faq-grid > div:first-child', '.faq-list details',
-    '.contact-inner > *:not(.contact-steps)', '.contact-steps > *'
-  ];
-  document.querySelectorAll(animatedSelectors.join(',')).forEach(element => {
-    element.classList.add('reveal');
-  });
-  document.querySelectorAll('.process-feature, .director-visual, .space-card').forEach(element => {
-    element.classList.add('reveal-photo');
-  });
-  const revealElements = [...document.querySelectorAll('.reveal')];
+  const revealElements = [...document.querySelectorAll('[data-reveal]')];
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
