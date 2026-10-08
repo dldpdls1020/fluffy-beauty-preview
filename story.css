@@ -278,3 +278,89 @@ button{cursor:pointer}
   *,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}
   .motion-ready [data-reveal]{opacity:1;transform:none}
 }
+
+/* Restore the original Fluffy Beauty hero and delicate display typography. */
+.page-shell{max-width:1280px;background:transparent;box-shadow:none}
+.page-shell main>section:not(.classic-hero),.site-footer{max-width:960px;margin-left:auto;margin-right:auto}
+.draft-bar{padding:8px 18px;background:#dfcbbb;color:#6b5142;text-align:center;font-size:11px;letter-spacing:.02em}
+.original-header{height:76px;padding:0 max(5vw,24px);border-bottom:1px solid #eadfd6;background:#fbf7f3}
+.original-header .brand{flex-direction:row;align-items:baseline;gap:11px}
+.original-header .brand span{font:400 38px/.9 var(--serif);letter-spacing:-.055em;color:#654f44}
+.original-header .brand small{font:600 10px 'Inter',sans-serif;letter-spacing:.18em;color:#a48674;margin:0}
+.original-header nav{margin:auto;gap:35px}
+.original-header nav a{color:#6e594d}
+.original-header .header-link{margin-left:0;padding:10px 18px;border-radius:999px;background:#b99379;color:#fff;box-shadow:0 7px 20px rgba(150,109,83,.12);transition:background .25s ease,transform .25s ease}
+.original-header .header-link:hover{background:#a78068;text-decoration:none;transform:translateY(-2px)}
+.classic-hero{background:radial-gradient(circle at 78% 45%,#f4ebe3 0,#fbf7f3 58%);color:#6c5548;overflow:hidden}
+.classic-hero-inner{max-width:1280px;min-height:650px;margin:auto;padding:55px max(7vw,30px) 25px;display:grid;grid-template-columns:47% 53%;align-items:center}
+.classic-hero-copy{position:relative;z-index:2;padding-bottom:45px}
+.classic-eyebrow{font:500 11px var(--sans);letter-spacing:.13em;color:#aa8d7a;margin-bottom:27px}
+.classic-hero h1{font:400 clamp(58px,6.3vw,96px)/1.35 var(--kserif);letter-spacing:-.065em;color:#604b41;margin:0 0 25px;white-space:nowrap}
+.classic-hero h1 em{font:inherit;color:inherit}
+.classic-hero-intro{font-size:15px;line-height:2;color:#806c60;letter-spacing:-.035em;margin-bottom:30px}
+.classic-hero-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.classic-hero-actions .pill-button{min-width:225px;box-shadow:0 13px 28px rgba(159,115,87,.15)}
+.classic-hero-actions .under-link{color:#866653;white-space:nowrap}
+.classic-hero-event{display:inline-flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:23px;padding:12px 17px;border:1px solid #ddc9ba;border-radius:17px;background:rgba(255,250,245,.83);box-shadow:0 10px 26px rgba(135,101,77,.06);color:#755947}
+.classic-hero-event>span{font:600 9px 'Inter',sans-serif;letter-spacing:.12em;color:#aa856d}
+.classic-hero-event strong{font:400 14px var(--kserif);white-space:nowrap}
+.classic-hero-event small{font-size:9px;color:#9c8170;white-space:nowrap}
+.classic-hero-art{height:555px;position:relative;display:flex;align-items:center;justify-content:center}
+.classic-hero-circle{width:460px;height:460px;border-radius:50%;background:#eee0d5;position:absolute;right:-10px;top:10px}
+.classic-hero-photo{height:530px;width:380px;border-radius:48% 48% 44% 44%/38% 38% 42% 42%;overflow:hidden;position:relative;z-index:1;background:#efe5dc url('hero-video-poster.png') center center/cover no-repeat;box-shadow:0 30px 60px rgba(135,101,77,.13)}
+.classic-hero-photo video{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
+.classic-hero-note{position:absolute;z-index:2;left:0;bottom:17px;width:180px;height:170px;padding:20px;background:#e6d2c1;border-radius:30px;color:#6e5141;display:flex;flex-direction:column;justify-content:space-between}
+.classic-hero-note span{font:500 10px 'Inter',sans-serif;letter-spacing:.14em}
+.classic-hero-note b{font:400 36px/1 var(--serif);letter-spacing:-.05em}
+.classic-vertical-label{position:absolute;right:-33px;bottom:100px;transform:rotate(90deg);font:600 9px 'Inter',sans-serif;letter-spacing:.15em;color:#8d827a;white-space:nowrap}
+.classic-hero-bottom{max-width:1280px;margin:auto;padding:0 max(7vw,30px) 26px;display:flex;justify-content:space-between;color:#8f8178;font:600 10px 'Inter',sans-serif;letter-spacing:.16em}
+.classic-hero-bottom a:hover{text-decoration:underline}
+.opening h2,.proof-head h2,.chapter-panel h2,.event-section h2,.director-text h3,.process-head h2,.portfolio-head h2,.space-head h2,.reservation h2{font-family:var(--kserif);font-weight:400;letter-spacing:-.065em}
+.concern-card h3,.process-list h3,.gallery-outro p,.faq-section summary{font-family:var(--kserif);font-weight:500}
+.opening-statement,.story-callout,.faq-outro{font-family:var(--kserif)}
+@media(max-width:1000px){
+  .classic-hero-inner{display:flex;flex-direction:column-reverse;align-items:stretch;min-height:0;padding:22px 30px 38px}
+  .classic-hero-art{height:540px;margin:0 auto;width:min(100%,600px)}
+  .classic-hero-circle{right:12%}
+  .classic-hero-copy{max-width:650px;width:100%;margin:12px auto 0;padding:10px 0 0}
+  .classic-hero h1{font-size:clamp(60px,8vw,82px)}
+  .classic-hero-bottom{padding:0 30px 22px}
+}
+@media(max-width:760px){
+  .page-shell{max-width:none}
+  .draft-bar{font-size:10px;padding:7px 10px}
+  .original-header{height:65px;padding:0 18px}
+  .original-header .brand span{font-size:31px}
+  .original-header .brand small{font-size:9px}
+  .original-header nav{display:none}
+  .original-header .header-link{font-size:10px;padding:9px 14px;white-space:nowrap}
+  .classic-hero-inner{padding:15px 18px 30px}
+  .classic-hero-art{height:390px;width:100%;max-width:430px;margin:0 auto}
+  .classic-hero-circle{width:300px;height:300px;right:4%;top:24px}
+  .classic-hero-photo{width:265px;height:365px}
+  .classic-hero-note{width:125px;height:120px;left:2%;bottom:0;padding:15px;border-radius:23px}
+  .classic-hero-note b{font-size:26px}
+  .classic-hero-note span{font-size:8px}
+  .classic-vertical-label{right:-33px;bottom:83px;font-size:7px}
+  .classic-hero-copy{margin:0;padding:24px 5px 0}
+  .classic-eyebrow{font-size:9px;margin-bottom:12px}
+  .classic-hero h1{font-size:clamp(47px,10.5vw,65px);margin-bottom:17px}
+  .classic-hero-intro{font-size:13px;line-height:1.9;margin-bottom:22px}
+  .classic-hero-actions{display:block}
+  .classic-hero-actions .pill-button{width:100%;max-width:360px}
+  .classic-hero-actions .under-link{display:inline-block;margin-top:14px}
+  .classic-hero-event{margin-top:18px;padding:11px 14px;gap:5px 10px}
+  .classic-hero-event>span{width:100%;font-size:8px}
+  .classic-hero-event strong{font-size:13px}
+  .classic-hero-event small{font-size:9px}
+  .classic-hero-bottom{padding:0 18px 20px;font-size:8px}
+  .classic-hero-bottom>span{display:none}
+}
+@media(max-width:420px){
+  .classic-hero-art{height:355px}
+  .classic-hero-circle{width:270px;height:270px;right:2%}
+  .classic-hero-photo{width:245px;height:335px}
+  .classic-hero-note{width:115px;height:105px}
+  .classic-hero-note b{font-size:23px}
+  .classic-hero h1{font-size:47px}
+}
