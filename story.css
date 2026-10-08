@@ -98,7 +98,14 @@ button{cursor:pointer}
 .event-price strong{font:500 82px/1 var(--serif);letter-spacing:-.06em;color:#a77c61;margin-top:10px}
 .event-price strong small{font:400 17px var(--kserif);margin-left:6px;letter-spacing:0}
 .event-price p{font-size:10px;color:#8d7769;margin:12px 0 22px}
+.event-price .event-condition{margin:15px 0 3px;font-size:14px;font-weight:700;color:#755744;letter-spacing:-.04em}
+.event-price .event-condition b{font-weight:400;color:#b79883}
+.event-price .event-detail{margin:0 0 18px;font-size:10px;line-height:1.7}
 .event-price .pill-button{width:100%}
+.event-explainer{grid-column:1/-1;display:grid;grid-template-columns:230px 1fr;align-items:start;gap:5px 30px;padding:28px 32px;border-top:1px solid rgba(112,83,67,.25);background:rgba(255,249,243,.25)}
+.event-explainer span{grid-column:1/-1;font:600 9px 'Inter',sans-serif;letter-spacing:.17em;color:#9a725b}
+.event-explainer h3{font:400 25px/1.5 var(--kserif);letter-spacing:-.06em;color:#654d40}
+.event-explainer p{font-size:13px;line-height:1.9;color:#69564c}
 .director-story{padding:80px 70px 95px;display:grid;grid-template-columns:47% 1fr;gap:50px;align-items:center}
 .director-photo{position:relative}
 .director-photo img{width:100%;height:450px;object-fit:cover;object-position:center 25%;border-radius:14px}
@@ -159,6 +166,8 @@ button{cursor:pointer}
 .reservation-event span{font:600 10px 'Inter',sans-serif;letter-spacing:.14em;color:#d6b9a4}
 .reservation-event strong{font:500 18px var(--kserif);color:#fff}
 .reservation-event small{font-size:10px;color:#d3bba9}
+.reservation-event .reservation-explainer{margin:11px 0 0;padding-top:11px;border-top:1px solid rgba(237,220,207,.28);font-size:11px;line-height:1.8;color:#eadbd0}
+.reservation-explainer b{font-weight:600;color:#f8f2eb}
 .reservation .pill-button{min-width:300px}
 .reservation-note{font-size:10px;color:#d6c2b3;margin-top:20px}
 .site-footer{background:#f3ede7;padding:50px 60px;display:grid;grid-template-columns:1fr auto;gap:35px}
@@ -229,6 +238,9 @@ button{cursor:pointer}
   .event-inner{display:block}
   .event-section h2{font-size:clamp(31px,7vw,42px)}
   .event-price{margin-top:28px}
+  .event-explainer{display:block;margin-top:23px;padding:23px 5px 0}
+  .event-explainer h3{font-size:23px;margin:6px 0}
+  .event-explainer p{font-size:12px}
   .director-story{display:block;padding:65px 30px 75px}
   .director-photo{max-width:470px;margin:auto}
   .director-photo img{height:440px}
