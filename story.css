@@ -308,6 +308,7 @@ button{cursor:pointer}
 .classic-hero-copy{position:relative;z-index:2;padding-bottom:45px}
 .classic-eyebrow{font:500 11px var(--sans);letter-spacing:.13em;color:#aa8d7a;margin-bottom:27px}
 .classic-hero h1{font:400 clamp(58px,6.3vw,96px)/1.35 var(--kserif);letter-spacing:-.065em;color:#604b41;margin:0 0 25px;white-space:nowrap}
+.classic-hero h1.hero-question{font-size:clamp(43px,4.2vw,63px);line-height:1.38;white-space:normal}
 .classic-hero h1 em{font:inherit;color:inherit}
 .classic-hero-intro{font-size:15px;line-height:2;color:#806c60;letter-spacing:-.035em;margin-bottom:30px}
 .classic-hero-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
@@ -330,12 +331,14 @@ button{cursor:pointer}
 .opening h2,.proof-head h2,.chapter-panel h2,.event-section h2,.director-text h3,.process-head h2,.portfolio-head h2,.space-head h2,.reservation h2{font-family:var(--kserif);font-weight:400;letter-spacing:-.065em}
 .concern-card h3,.process-list h3,.gallery-outro p,.faq-section summary{font-family:var(--kserif);font-weight:500}
 .opening-statement,.story-callout,.faq-outro{font-family:var(--kserif)}
+.simulation-note{margin:24px auto 0;max-width:650px;text-align:center;font-size:11px;line-height:1.8;color:#9b897e}
 @media(max-width:1000px){
   .classic-hero-inner{display:flex;flex-direction:column-reverse;align-items:stretch;min-height:0;padding:22px 30px 38px}
   .classic-hero-art{height:540px;margin:0 auto;width:min(100%,600px)}
   .classic-hero-circle{right:12%}
   .classic-hero-copy{max-width:650px;width:100%;margin:12px auto 0;padding:10px 0 0}
   .classic-hero h1{font-size:clamp(60px,8vw,82px)}
+  .classic-hero h1.hero-question{font-size:clamp(44px,6vw,60px)}
   .classic-hero-bottom{padding:0 30px 22px}
 }
 @media(max-width:760px){
@@ -357,6 +360,7 @@ button{cursor:pointer}
   .classic-hero-copy{margin:0;padding:24px 5px 0}
   .classic-eyebrow{font-size:9px;margin-bottom:12px}
   .classic-hero h1{font-size:clamp(47px,10.5vw,65px);margin-bottom:17px}
+  .classic-hero h1.hero-question{font-size:clamp(36px,9vw,46px)}
   .classic-hero-intro{font-size:13px;line-height:1.9;margin-bottom:22px}
   .classic-hero-actions{display:block}
   .classic-hero-actions .pill-button{width:100%;max-width:360px}
@@ -375,4 +379,5 @@ button{cursor:pointer}
   .classic-hero-note{width:115px;height:105px}
   .classic-hero-note b{font-size:23px}
   .classic-hero h1{font-size:47px}
+  .classic-hero h1.hero-question{font-size:clamp(34px,9vw,40px)}
 }
