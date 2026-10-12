@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="story.css?v=8">
-  <script src="site.js?v=6" defer></script>
+  <link rel="stylesheet" href="story.css?v=10">
+  <script src="site.js?v=8" defer></script>
 </head>
 <body>
   <div class="page-shell">
@@ -50,6 +50,18 @@
         <div class="opening-statement" data-reveal><p><strong>먼저 보고, 충분히 이야기한 뒤 결정하세요.</strong></p></div>
         <div class="opening-actions" data-reveal><a class="pill-button bronze" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">눈썹 사진으로 상담 시작하기 <span aria-hidden="true">↗</span></a></div>
         <p class="simulation-note" data-reveal>시뮬레이션은 예상 이미지이며 실제 결과는 눈썹·피부 상태에 따라 달라질 수 있습니다.</p>
+      </section>
+
+      <section class="mood-film-section paper" aria-labelledby="mood-film-title">
+        <div class="mood-film-copy" data-reveal>
+          <p class="section-index">FLUFFY BEAUTY · MOOD FILM</p>
+          <h2 id="mood-film-title">나에게 어울리는 자연스러움을<br><em>먼저 떠올려 보세요.</em></h2>
+          <p>디자인을 결정하기 전, 내가 원하는 분위기를 천천히 살펴보세요.</p>
+        </div>
+        <figure class="mood-film" data-reveal>
+          <div class="mood-film-frame"><video muted loop playsinline preload="none" poster="ai-mood-film-poster.png" aria-label="플러피뷰티의 분위기를 표현한 연출 영상"><source src="ai-mood-film.mp4" type="video/mp4">영상을 재생할 수 없는 브라우저에서는 표지 이미지를 볼 수 있습니다.</video><button class="mood-film-toggle" type="button" aria-label="영상 재생">영상 재생</button></div>
+          <figcaption>브랜드 분위기를 표현한 AI 연출 영상입니다. 실제 시술 결과는 아래 사진에서 확인해 주세요.</figcaption>
+        </figure>
       </section>
 
       <section class="proof-section" id="proof" aria-labelledby="proof-title">
@@ -141,7 +153,7 @@
       </section>
     </main>
 
-    <footer class="site-footer"><div><a class="brand" href="#top"><span>Fluffy</span><small>BEAUTY · YANGJU</small></a><p>김민선 원장의 자연스러운 눈썹 디자인</p></div><div><a href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">KAKAO CHANNEL ↗</a><a href="https://www.instagram.com/fluffy_pmu/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="#top">BACK TO TOP ↑</a></div><small>© 2026 FLUFFY BEAUTY · 대표 검토용 초안. 제공받은 실제 영상과 사진을 사용했습니다.</small></footer>
+    <footer class="site-footer"><div><a class="brand" href="#top"><span>Fluffy</span><small>BEAUTY · YANGJU</small></a><p>김민선 원장의 자연스러운 눈썹 디자인</p></div><div><a href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">KAKAO CHANNEL ↗</a><a href="https://www.instagram.com/fluffy_pmu/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="#top">BACK TO TOP ↑</a></div><small>© 2026 FLUFFY BEAUTY · 대표 검토용 초안. 제공받은 실제 영상·사진과 AI 연출 영상을 사용했습니다.</small></footer>
   </div>
 
   <dialog class="gallery-dialog" id="gallery-dialog" aria-label="눈썹 사진 갤러리"><div class="gallery-dialog-inner"><button type="button" class="gallery-close" aria-label="갤러리 닫기">×</button><div class="gallery-stage"><button type="button" class="gallery-arrow gallery-prev" aria-label="이전 사진">‹</button><img id="gallery-large" alt=""><button type="button" class="gallery-arrow gallery-next" aria-label="다음 사진">›</button></div><div class="gallery-dialog-caption"><span id="gallery-count" aria-live="polite"></span><p id="gallery-caption"></p><small>좌우 버튼 또는 화면 넘기기로 다른 사진을 볼 수 있습니다.</small></div></div></dialog>

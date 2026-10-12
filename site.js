@@ -60,6 +60,37 @@ galleryLarge.addEventListener('touchend', event => {
 }, { passive: true });
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const moodFilm = document.querySelector('.mood-film video');
+const moodFilmToggle = document.querySelector('.mood-film-toggle');
+let moodFilmManuallyPaused = false;
+if (moodFilm && moodFilmToggle) {
+  const updateMoodFilmToggle = () => {
+    const label = moodFilm.paused ? '영상 재생' : '영상 일시정지';
+    moodFilmToggle.textContent = label;
+    moodFilmToggle.setAttribute('aria-label', label);
+  };
+  moodFilm.addEventListener('play', updateMoodFilmToggle);
+  moodFilm.addEventListener('pause', updateMoodFilmToggle);
+  moodFilmToggle.addEventListener('click', () => {
+    if (moodFilm.paused) {
+      moodFilmManuallyPaused = false;
+      moodFilm.play().catch(() => {});
+    } else {
+      moodFilmManuallyPaused = true;
+      moodFilm.pause();
+    }
+  });
+}
+if (moodFilm && 'IntersectionObserver' in window && !reducedMotion.matches) {
+  const filmObserver = new IntersectionObserver(([entry]) => {
+    if (entry.isIntersecting && !moodFilmManuallyPaused) {
+      moodFilm.play().catch(() => {});
+    } else {
+      moodFilm.pause();
+    }
+  }, { threshold: 0.25 });
+  filmObserver.observe(moodFilm);
+}
 if ('IntersectionObserver' in window && !reducedMotion.matches) {
   const revealElements = [...document.querySelectorAll('[data-reveal]')];
   const observer = new IntersectionObserver(entries => {
