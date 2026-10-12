@@ -91,7 +91,7 @@ button{cursor:pointer}
 .story-callout{margin:53px auto 0;padding:27px 20px;background:#eee5dd;text-align:center;font-size:21px;line-height:1.8;color:#70594c}
 .story-callout strong{font-weight:600}
 .event-section{background:#dac8b8;padding:70px 65px}
-.event-inner{display:grid;grid-template-columns:1.1fr .8fr;gap:30px;align-items:center}
+.event-inner{display:flex;flex-direction:column;gap:24px;align-items:stretch}
 .event-section .chapter-label{color:#806354}
 .event-section h2{font-size:clamp(32px,3.7vw,47px);line-height:1.45;letter-spacing:-.065em;margin:13px 0}
 .event-section h2 em{color:#86614e}
