@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="story.css?v=18">
-  <script src="site.js?v=9" defer></script>
+  <link rel="stylesheet" href="story.css?v=19">
+  <script src="site.js?v=10" defer></script>
 </head>
 <body>
   <div class="page-shell">
@@ -116,19 +116,26 @@
 
       <section class="portfolio-section paper" id="portfolio" aria-labelledby="portfolio-title">
         <div class="section-top"><span>04 / BROW GALLERY</span><span>REAL WORK</span></div>
-        <div class="portfolio-head" data-reveal><p class="chapter-script">The details make a difference.</p><h2 id="portfolio-title">말보다 분명한 건<br><em>실제 눈썹의 결.</em></h2><p>사진을 누르면 가까이서 보고 넘겨볼 수 있습니다. 상담할 때 마음에 드는 결을 함께 알려주세요.</p></div>
-        <div class="gallery-grid">
-          <button type="button" class="gallery-item" data-reveal><img src="brow-result-01.jpeg" alt="위아래로 배치된 눈썹 디자인 비교 사진" loading="lazy"><span class="gallery-meta"><small>01 / BROW DESIGN</small><strong>섬세한 결의 변화</strong></span></button>
-          <button type="button" class="gallery-item" data-reveal><img src="brow-result-02.jpeg" alt="자연스러운 눈썹 결을 보여주는 비교 사진" loading="lazy"><span class="gallery-meta"><small>02 / BROW DESIGN</small><strong>얼굴에 어울리는 선</strong></span></button>
-          <button type="button" class="gallery-item" data-reveal><img src="brow-result-03.jpeg" alt="눈썹 밀도의 변화를 보여주는 비교 사진" loading="lazy"><span class="gallery-meta"><small>03 / BROW DESIGN</small><strong>가볍게 채운 밀도</strong></span></button>
-          <button type="button" class="gallery-item" data-reveal><img src="brow-result-04.jpeg" alt="눈썹 모양을 위아래로 비교한 클로즈업 사진" loading="lazy"><span class="gallery-meta"><small>04 / BROW DESIGN</small><strong>부드러운 눈썹 라인</strong></span></button>
-          <button type="button" class="gallery-item" data-reveal><img src="brow-result-05.jpeg" alt="눈썹 결이 보이는 두 장의 클로즈업 사진" loading="lazy"><span class="gallery-meta"><small>05 / BROW DETAIL</small><strong>결이 살아 있는 표현</strong></span></button>
-          <button type="button" class="gallery-item" data-reveal><img src="brow-result-06.jpeg" alt="남성 눈썹 디자인을 비교한 사진" loading="lazy"><span class="gallery-meta"><small>06 / BROW DESIGN</small><strong>자연스러운 남성 눈썹</strong></span></button>
-          <button type="button" class="gallery-item" data-reveal><img src="brow-result-07.jpeg" alt="눈썹 밀도와 라인을 비교한 사진" loading="lazy"><span class="gallery-meta"><small>07 / BROW DESIGN</small><strong>차분한 인상의 완성</strong></span></button>
-          <button type="button" class="gallery-item" data-reveal><img src="brow-result-08.jpeg" alt="마스크를 쓴 고객의 눈썹 디자인 사진" loading="lazy"><span class="gallery-meta"><small>08 / BROW DETAIL</small><strong>얼굴에 맞춘 균형</strong></span></button>
+        <div class="portfolio-head" data-reveal><p class="chapter-script">The details make a difference.</p><h2 id="portfolio-title">말보다 분명한 건<br><em>실제 눈썹의 결.</em></h2></div>
+        <div class="gallery-group" aria-labelledby="gallery-women-title">
+          <h3 id="gallery-women-title">여자 눈썹</h3>
+          <div class="gallery-grid">
+            <button type="button" class="gallery-item" data-gallery-group="women" aria-label="여자 눈썹 사진 1 크게 보기" data-reveal><img src="brow-result-01.jpeg" alt="위아래로 배치된 눈썹 디자인 비교 사진" loading="lazy"></button>
+            <button type="button" class="gallery-item" data-gallery-group="women" aria-label="여자 눈썹 사진 2 크게 보기" data-reveal><img src="brow-result-02.jpeg" alt="자연스러운 눈썹 결을 보여주는 비교 사진" loading="lazy"></button>
+            <button type="button" class="gallery-item" data-gallery-group="women" aria-label="여자 눈썹 사진 3 크게 보기" data-reveal><img src="brow-result-03.jpeg" alt="눈썹 밀도의 변화를 보여주는 비교 사진" loading="lazy"></button>
+            <button type="button" class="gallery-item" data-gallery-group="women" aria-label="여자 눈썹 사진 4 크게 보기" data-reveal><img src="brow-result-04.jpeg" alt="눈썹 모양을 위아래로 비교한 클로즈업 사진" loading="lazy"></button>
+            <button type="button" class="gallery-item" data-gallery-group="women" aria-label="여자 눈썹 사진 5 크게 보기" data-reveal><img src="brow-result-05.jpeg" alt="눈썹 결이 보이는 두 장의 클로즈업 사진" loading="lazy"></button>
+            <button type="button" class="gallery-item" data-gallery-group="women" aria-label="여자 눈썹 사진 6 크게 보기" data-reveal><img src="brow-result-07.jpeg" alt="눈썹 밀도와 라인을 비교한 사진" loading="lazy"></button>
+          </div>
         </div>
-        <p class="image-note">사진마다 보이는 색감과 결과는 촬영 환경, 원래 눈썹과 피부 상태에 따라 다를 수 있습니다.</p>
-        <div class="gallery-outro" data-reveal><p>내 얼굴에는 어떤 결이 어울릴까요?</p><a class="pill-button bronze" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">눈썹 사진 보내고 상담하기 <span aria-hidden="true">↗</span></a></div>
+        <div class="gallery-group gallery-group-men" aria-labelledby="gallery-men-title">
+          <h3 id="gallery-men-title">남자 눈썹</h3>
+          <div class="gallery-grid">
+            <button type="button" class="gallery-item" data-gallery-group="men" aria-label="남자 눈썹 사진 1 크게 보기" data-reveal><img src="brow-result-06.jpeg" alt="남성 눈썹 디자인을 비교한 사진" loading="lazy"></button>
+            <button type="button" class="gallery-item" data-gallery-group="men" aria-label="남자 눈썹 사진 2 크게 보기" data-reveal><img src="brow-result-08.jpeg" alt="마스크를 쓴 고객의 눈썹 디자인 사진" loading="lazy"></button>
+          </div>
+        </div>
+        <div class="gallery-outro" data-reveal><a class="pill-button bronze" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">눈썹 사진 보내고 상담하기 <span aria-hidden="true">↗</span></a></div>
       </section>
 
       <section class="chapter-panel dark" id="faq" aria-labelledby="faq-title">
@@ -157,7 +164,7 @@
     <footer class="site-footer"><div><a class="brand" href="#top"><span>Fluffy</span><small>BEAUTY · YANGJU</small></a><p>김민선 원장의 자연스러운 눈썹 디자인</p></div><div><a href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer">KAKAO CHANNEL ↗</a><a href="https://www.instagram.com/fluffy_pmu/" target="_blank" rel="noopener noreferrer">INSTAGRAM ↗</a><a href="#top">BACK TO TOP ↑</a></div><small>© 2026 FLUFFY BEAUTY · 제공받은 실제 영상·사진과 AI 연출 영상을 사용했습니다.</small></footer>
   </div>
 
-  <dialog class="gallery-dialog" id="gallery-dialog" aria-label="눈썹 사진 갤러리"><div class="gallery-dialog-inner"><button type="button" class="gallery-close" aria-label="갤러리 닫기">×</button><div class="gallery-stage"><button type="button" class="gallery-arrow gallery-prev" aria-label="이전 사진">‹</button><img id="gallery-large" alt=""><button type="button" class="gallery-arrow gallery-next" aria-label="다음 사진">›</button></div><div class="gallery-dialog-caption"><span id="gallery-count" aria-live="polite"></span><p id="gallery-caption"></p><small>좌우 버튼 또는 화면 넘기기로 다른 사진을 볼 수 있습니다.</small></div></div></dialog>
+  <dialog class="gallery-dialog" id="gallery-dialog" aria-label="눈썹 사진 갤러리"><div class="gallery-dialog-inner"><button type="button" class="gallery-close" aria-label="갤러리 닫기">×</button><div class="gallery-stage"><button type="button" class="gallery-arrow gallery-prev" aria-label="이전 사진">‹</button><img id="gallery-large" alt=""><button type="button" class="gallery-arrow gallery-next" aria-label="다음 사진">›</button></div><div class="gallery-dialog-caption"><span id="gallery-count" aria-live="polite"></span><small>좌우 버튼 또는 화면 넘기기로 다른 사진을 볼 수 있습니다.</small></div></div></dialog>
   <nav class="mobile-cta" aria-label="빠른 상담과 예약">
     <a class="mobile-cta-kakao" href="https://pf.kakao.com/_fGKin" target="_blank" rel="noopener noreferrer" aria-label="사진 상담 문의"><span class="mobile-cta-label" aria-hidden="true"><span>사진</span><span>상담</span><span>문의</span></span></a>
     <a class="mobile-cta-naver" href="https://booking.naver.com/booking/13/bizes/1577232/items/7355937" target="_blank" rel="noopener noreferrer" aria-label="네이버 예약"><span class="mobile-cta-label" aria-hidden="true"><span>네이버</span><span>예약</span></span></a>

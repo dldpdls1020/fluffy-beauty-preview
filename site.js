@@ -1,24 +1,26 @@
 const galleryItems = [...document.querySelectorAll('.gallery-item')];
 const galleryDialog = document.querySelector('#gallery-dialog');
 const galleryLarge = document.querySelector('#gallery-large');
-const galleryCaption = document.querySelector('#gallery-caption');
 const galleryCount = document.querySelector('#gallery-count');
 let activeGalleryIndex = 0;
+let activeGalleryItems = galleryItems;
 let activeGalleryOpener = null;
 
 function showGalleryImage(index) {
-  activeGalleryIndex = (index + galleryItems.length) % galleryItems.length;
-  const item = galleryItems[activeGalleryIndex];
+  activeGalleryIndex = (index + activeGalleryItems.length) % activeGalleryItems.length;
+  const item = activeGalleryItems[activeGalleryIndex];
   const thumbnail = item.querySelector('img');
   galleryLarge.src = thumbnail.currentSrc || thumbnail.src;
   galleryLarge.alt = thumbnail.alt;
-  galleryCaption.textContent = item.querySelector('strong').textContent;
-  galleryCount.textContent = `${activeGalleryIndex + 1} / ${galleryItems.length}`;
+  const groupName = item.dataset.galleryGroup === 'men' ? '남자 눈썹' : '여자 눈썹';
+  galleryCount.textContent = `${groupName} ${activeGalleryIndex + 1} / ${activeGalleryItems.length}`;
 }
 
 function openGallery(index, opener) {
   activeGalleryOpener = opener;
-  showGalleryImage(index);
+  const selectedItem = galleryItems[index];
+  activeGalleryItems = galleryItems.filter(item => item.dataset.galleryGroup === selectedItem.dataset.galleryGroup);
+  showGalleryImage(activeGalleryItems.indexOf(selectedItem));
   galleryDialog.showModal();
   document.body.classList.add('gallery-open');
   galleryDialog.querySelector('.gallery-close').focus();
