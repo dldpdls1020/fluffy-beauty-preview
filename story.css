@@ -105,7 +105,7 @@ button{cursor:pointer}
 .event-price .event-condition b{font-weight:400;color:#b79883}
 .event-price .event-detail{margin:0 0 18px;font-size:10px;line-height:1.7}
 .event-price .pill-button{width:100%}
-.event-explainer{grid-column:1/-1;display:grid;grid-template-columns:230px 1fr;align-items:start;gap:5px 30px;padding:28px 32px;border-top:1px solid rgba(112,83,67,.25);background:rgba(255,249,243,.25)}
+.event-explainer{grid-column:1/-1;display:grid;grid-template-columns:230px 1fr;align-items:start;gap:5px 30px;padding:34px 36px 38px;border:1px solid rgba(112,83,67,.17);border-radius:18px;background:rgba(255,249,243,.42)}
 .event-explainer span{grid-column:1/-1;font:600 9px 'Inter',sans-serif;letter-spacing:.17em;color:#9a725b}
 .event-explainer h3{font:400 25px/1.5 var(--kserif);letter-spacing:-.06em;color:#654d40}
 .event-explainer p{font-size:13px;line-height:1.9;color:#69564c}
@@ -241,7 +241,7 @@ button{cursor:pointer}
   .event-inner{display:block}
   .event-section h2{font-size:clamp(31px,7vw,42px)}
   .event-price{margin-top:28px}
-  .event-explainer{display:block;margin-top:23px;padding:23px 5px 0}
+  .event-explainer{display:block;margin-top:27px;padding:27px 22px 32px}
   .event-explainer h3{font-size:23px;margin:6px 0}
   .event-explainer p{font-size:12px}
   .director-story{display:block;padding:65px 30px 75px}
