@@ -271,10 +271,13 @@ button{cursor:pointer}
   .reservation h2{font-size:clamp(32px,7vw,46px)}
   .reservation .chapter-frame>p:not(.chapter-script):not(.chapter-label):not(.reservation-note){font-size:12px}
   .reservation .pill-button{min-width:0;width:100%}
-  .site-footer{padding:42px 25px 95px;display:block}
+  .site-footer{padding:42px 25px 125px;display:block}
   .site-footer>div:nth-child(2){align-items:flex-start;margin-top:28px}
   .site-footer>small{display:block;margin-top:28px}
-  .mobile-cta{display:flex;align-items:center;justify-content:space-between;position:fixed;z-index:10;left:0;right:0;bottom:0;min-height:58px;padding:15px 22px;background:#ad856c;color:#fff;font-size:12px;font-weight:700;box-shadow:0 -6px 20px rgba(83,63,49,.15)}
+  .mobile-cta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;position:fixed;z-index:10;left:0;right:0;bottom:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:#fbf7f3;border-top:1px solid #eaded4;box-shadow:0 -6px 20px rgba(83,63,49,.12)}
+  .mobile-cta a{display:flex;align-items:center;justify-content:center;min-height:52px;padding:0 8px;border-radius:12px;font-size:clamp(11px,3vw,12px);font-weight:700;white-space:nowrap}
+  .mobile-cta-kakao{background:#ad856c;color:#fff}
+  .mobile-cta-naver{background:#eee2d8;color:#654d3f}
   .gallery-dialog{width:calc(100vw - 16px);max-height:calc(100dvh - 16px)}
   .gallery-dialog-inner{padding:8px 8px 18px}
   .gallery-stage img{max-height:calc(100dvh - 150px)}
