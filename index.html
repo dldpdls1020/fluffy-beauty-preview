@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="story.css?v=11">
+  <link rel="stylesheet" href="story.css?v=12">
   <script src="site.js?v=8" defer></script>
 </head>
 <body>
@@ -53,13 +53,16 @@
       </section>
 
       <section class="mood-film-section paper" aria-labelledby="mood-film-title">
-        <div class="mood-film-copy" data-reveal>
-          <p class="section-index">FLUFFY BEAUTY · MOOD FILM</p>
-          <h2 id="mood-film-title">나에게 어울리는 자연스러움을<br><em>먼저 떠올려 보세요.</em></h2>
-          <p>디자인을 결정하기 전, 내가 원하는 분위기를 천천히 살펴보세요.</p>
-        </div>
         <figure class="mood-film" data-reveal>
-          <div class="mood-film-frame"><video muted loop playsinline preload="none" poster="ai-mood-film-poster.png" aria-label="플러피뷰티의 분위기를 표현한 연출 영상"><source src="ai-mood-film.mp4" type="video/mp4">영상을 재생할 수 없는 브라우저에서는 표지 이미지를 볼 수 있습니다.</video><button class="mood-film-toggle" type="button" aria-label="영상 재생">영상 재생</button></div>
+          <div class="mood-film-frame">
+            <video muted loop playsinline preload="none" poster="ai-mood-film-poster.png" aria-label="플러피뷰티의 분위기를 표현한 연출 영상"><source src="ai-mood-film.mp4" type="video/mp4">영상을 재생할 수 없는 브라우저에서는 표지 이미지를 볼 수 있습니다.</video>
+            <div class="mood-film-copy">
+              <p class="section-index">FLUFFY BEAUTY · MOOD FILM</p>
+              <h2 id="mood-film-title">내게 어울리는 결,<br><em>먼저 떠올려 보세요.</em></h2>
+              <p>디자인을 결정하기 전,<br>내가 원하는 분위기를 천천히 살펴보세요.</p>
+            </div>
+            <button class="mood-film-toggle" type="button" aria-label="영상 재생">영상 재생</button>
+          </div>
           <figcaption>브랜드 분위기를 표현한 AI 연출 영상입니다. 실제 시술 결과는 아래 사진에서 확인해 주세요.</figcaption>
         </figure>
       </section>
