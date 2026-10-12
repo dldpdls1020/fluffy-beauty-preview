@@ -142,6 +142,10 @@ button{cursor:pointer}
 .gallery-item::after{content:'↗';position:absolute;right:11px;bottom:11px;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:rgba(255,250,245,.92);color:#765847;font-size:15px}
 .gallery-item img{display:block;width:100%;aspect-ratio:4/5;object-fit:contain;background:#e5d7cb}
 .gallery-outro{display:flex;align-items:center;justify-content:center;margin-top:35px}
+.gallery-outro .pill-button{position:relative;justify-content:center;text-align:center;padding-right:54px;padding-left:54px;animation:gallery-cta-bounce 3.8s ease-in-out infinite}
+.gallery-cta-arrow{position:absolute;right:30px;top:50%;transform:translateY(-50%)}
+@keyframes gallery-cta-bounce{0%,14%,100%{transform:translateY(0) scale(1)}4%{transform:translateY(-5px) scale(1.015)}8%{transform:translateY(0) scale(.995)}11%{transform:translateY(-2px) scale(1.005)}}
+.gallery-outro .pill-button:hover{animation-play-state:paused;transform:translateY(-3px)}
 .faq-section{padding:70px}
 .faq-section details{border-bottom:1px solid var(--line)}
 .faq-section details:first-child{border-top:1px solid var(--line)}
