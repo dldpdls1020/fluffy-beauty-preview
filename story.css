@@ -278,11 +278,24 @@ button{cursor:pointer}
   .mobile-cta a{display:flex;align-items:center;justify-content:center;min-height:52px;padding:0 8px;border-radius:12px;font-size:clamp(11px,3vw,12px);font-weight:700;white-space:nowrap}
   .mobile-cta-kakao{background:#ad856c;color:#fff}
   .mobile-cta-naver{background:#eee2d8;color:#654d3f}
+  .mobile-cta-label{display:inline-flex;align-items:baseline;gap:.3em}
+  .mobile-cta-label span{display:inline-block;animation:cta-word-bounce 3.8s ease-in-out infinite;animation-delay:var(--bounce-delay,0s)}
+  .mobile-cta-kakao .mobile-cta-label span:nth-child(2){--bounce-delay:.12s}
+  .mobile-cta-kakao .mobile-cta-label span:nth-child(3){--bounce-delay:.24s}
+  .mobile-cta-naver .mobile-cta-label span:first-child{--bounce-delay:.6s}
+  .mobile-cta-naver .mobile-cta-label span:nth-child(2){--bounce-delay:.72s}
   .gallery-dialog{width:calc(100vw - 16px);max-height:calc(100dvh - 16px)}
   .gallery-dialog-inner{padding:8px 8px 18px}
   .gallery-stage img{max-height:calc(100dvh - 150px)}
   .gallery-prev{left:6px}.gallery-next{right:6px}
 }
+@keyframes cta-word-bounce{
+  0%,15%,100%{transform:translateY(0) scale(1)}
+  4%{transform:translateY(-5px) scale(1.06)}
+  8%{transform:translateY(0) scale(.98)}
+  11%{transform:translateY(-2px) scale(1.02)}
+}
+@media(prefers-reduced-motion:reduce){.mobile-cta-label span{animation:none}}
 @media(max-width:420px){
   .hero-film{height:350px}
   .hero h1{font-size:34px}
