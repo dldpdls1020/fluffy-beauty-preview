@@ -367,8 +367,10 @@ button{cursor:pointer}
   .classic-hero-inner{display:flex;flex-direction:column-reverse;align-items:stretch;min-height:0;padding:22px 30px 38px}
   .classic-hero-art{height:540px;margin:0 auto;width:min(100%,600px)}
   .classic-hero-circle{right:12%}
-  .classic-hero-copy{max-width:650px;width:100%;margin:12px auto 0;padding:10px 0 0}
+  .classic-hero-copy{max-width:650px;width:100%;margin:12px auto 0;padding:10px 0 0;text-align:center}
   .classic-hero h1{font-size:clamp(46px,6vw,64px)}
+  .classic-hero-event{align-items:center;margin-right:auto;margin-left:auto;text-align:center}
+  .classic-hero-actions{justify-content:center}
   .classic-hero-bottom{padding:0 30px 22px}
 }
 @media(max-width:760px){
@@ -396,7 +398,7 @@ button{cursor:pointer}
   .classic-eyebrow{font-size:9px;margin-bottom:12px}
   .classic-hero h1{font-size:clamp(34px,8.4vw,48px);margin-bottom:17px}
   .classic-hero-intro{font-size:13px;line-height:1.9;margin-bottom:18px}
-  .classic-hero-actions{display:block}
+  .classic-hero-actions{display:flex;flex-direction:column;align-items:center;gap:0}
   .classic-hero-actions .pill-button{width:100%;max-width:360px}
   .classic-hero-actions .under-link{display:inline-block;margin-top:14px}
   .classic-hero-event{width:100%;max-width:360px;padding:12px 16px;margin-bottom:18px;gap:2px}
