@@ -295,8 +295,9 @@ button{cursor:pointer}
 }
 
 /* Restore the original Fluffy Beauty hero and delicate display typography. */
-.page-shell{max-width:1280px;background:transparent;box-shadow:none}
+.page-shell{max-width:1280px;background:transparent;box-shadow:none;overflow:visible}
 .page-shell main>section:not(.classic-hero),.site-footer{max-width:960px;margin-left:auto;margin-right:auto}
+.page-shell main>section.mood-film-section{max-width:none;width:100vw;margin-left:calc(50% - 50vw);margin-right:0;padding:0}
 .draft-bar{padding:8px 18px;background:#dfcbbb;color:#6b5142;text-align:center;font-size:11px;letter-spacing:.02em}
 .original-header{height:76px;padding:0 max(5vw,24px);border-bottom:1px solid #eadfd6;background:#fbf7f3}
 .original-header .brand{flex-direction:row;align-items:baseline;gap:11px}
@@ -336,19 +337,17 @@ button{cursor:pointer}
 .concern-card h3,.process-list h3,.gallery-outro p,.faq-section summary{font-family:var(--kserif);font-weight:500}
 .opening-statement,.story-callout,.faq-outro{font-family:var(--kserif)}
 .simulation-note{margin:24px auto 0;max-width:650px;text-align:center;font-size:11px;line-height:1.8;color:#9b897e}
-.mood-film-section{padding:12px 64px 82px}
-.mood-film{max-width:700px;margin:auto}
-.mood-film-frame{position:relative;height:680px;overflow:hidden;border-radius:27px;background:#eee1d5;box-shadow:0 20px 45px rgba(102,76,61,.12)}
-.mood-film-frame:after{content:'';position:absolute;inset:27% 0 0;z-index:1;pointer-events:none;background:linear-gradient(transparent 0%,rgba(63,46,38,.42) 44%,rgba(55,39,32,.86) 100%)}
-.mood-film video{display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%}
-.mood-film-copy{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:0 45px 48px;color:#fffaf5;text-align:left;text-shadow:0 2px 18px rgba(49,35,29,.22)}
-.mood-film-copy .section-index{font-size:10px;color:#f2e7dd}
-.mood-film-copy h2{font:400 clamp(36px,4vw,49px)/1.45 var(--kserif);letter-spacing:-.065em;margin:15px 0 15px}
+.mood-film-section{background:#e9ded3}
+.mood-film{position:relative;width:100%;max-width:none;margin:0}
+.mood-film-frame{position:relative;height:100svh;min-height:680px;overflow:hidden;background:#eee1d5}
+.mood-film-frame:after{content:'';position:absolute;inset:20% 0 0;z-index:1;pointer-events:none;background:linear-gradient(transparent 0%,rgba(63,46,38,.32) 43%,rgba(55,39,32,.9) 100%)}
+.mood-film video{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%}
+.mood-film-copy{position:absolute;z-index:2;left:0;right:0;bottom:64px;padding:0 max(7vw,28px);color:#fffaf5;text-align:left;text-shadow:0 2px 18px rgba(49,35,29,.22)}
+.mood-film-copy .section-index{font-size:12px;color:#f2e7dd}
+.mood-film-copy h2{font:400 clamp(42px,5.4vw,76px)/1.32 var(--kserif);letter-spacing:-.065em;margin:18px 0}
 .mood-film-copy h2 em{font-style:normal;color:#f4d7bd}
-.mood-film-copy>p:last-child{font-size:14px;line-height:1.85;color:#fff4eb}
-.mood-film-toggle{position:absolute;z-index:3;right:18px;top:18px;border:1px solid #d7bdaa;border-radius:999px;padding:9px 15px;background:rgba(252,247,241,.93);color:#6c5345;font-size:11px;font-weight:600;box-shadow:0 4px 14px rgba(63,43,32,.12)}
-.mood-film-toggle:hover{background:#fff9f3}
-.mood-film figcaption{margin:15px 0 0;font-size:11px;line-height:1.7;color:#9a887d;text-align:center}
+.mood-film-copy>p:last-child{font-size:16px;line-height:1.85;color:#fff4eb}
+.mood-film figcaption{position:absolute;z-index:2;right:max(7vw,28px);bottom:23px;font-size:11px;line-height:1.7;color:#f1e3d7;text-align:right}
 @media(max-width:1000px){
   .classic-hero-inner{display:flex;flex-direction:column-reverse;align-items:stretch;min-height:0;padding:22px 30px 38px}
   .classic-hero-art{height:540px;margin:0 auto;width:min(100%,600px)}
@@ -358,13 +357,12 @@ button{cursor:pointer}
   .classic-hero-bottom{padding:0 30px 22px}
 }
 @media(max-width:760px){
-  .mood-film-section{padding:0 22px 62px}
-  .mood-film-frame{height:clamp(470px,126vw,580px);border-radius:20px}
-  .mood-film-copy{padding:0 23px 28px}
-  .mood-film-copy h2{font-size:clamp(28px,7vw,37px);line-height:1.38;margin:12px 0}
+  .mood-film-frame{height:100svh;min-height:0}
+  .mood-film-copy{bottom:82px;padding:0 24px}
+  .mood-film-copy .section-index{font-size:9px}
+  .mood-film-copy h2{font-size:clamp(32px,8vw,40px);line-height:1.38;margin:12px 0}
   .mood-film-copy>p:last-child{font-size:12px;line-height:1.7}
-  .mood-film-toggle{right:12px;top:12px}
-  .mood-film figcaption{font-size:10px}
+  .mood-film figcaption{left:24px;right:24px;bottom:22px;font-size:9px;text-align:left}
   .page-shell{max-width:none}
   .draft-bar{font-size:10px;padding:7px 10px}
   .original-header{height:65px;padding:0 18px}
