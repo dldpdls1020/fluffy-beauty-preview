@@ -30,7 +30,11 @@ galleryItems.forEach((item, index) => {
   item.addEventListener('click', () => openGallery(index, item));
 });
 document.querySelectorAll('.proof-shot').forEach(item => {
-  item.addEventListener('click', () => openGallery(Number(item.dataset.galleryIndex), item));
+  item.addEventListener('click', () => {
+    const imageSrc = item.querySelector('img')?.getAttribute('src');
+    const galleryIndex = galleryItems.findIndex(galleryItem => galleryItem.querySelector('img')?.getAttribute('src') === imageSrc);
+    if (galleryIndex >= 0) openGallery(galleryIndex, item);
+  });
 });
 
 galleryDialog.querySelector('.gallery-close').addEventListener('click', () => galleryDialog.close());
