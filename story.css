@@ -136,8 +136,8 @@ button{cursor:pointer}
 .portfolio-head{margin-top:58px}
 .gallery-group + .gallery-group{margin-top:38px}
 .gallery-group h3{margin:0 0 16px;text-align:center;font:500 24px var(--kserif);letter-spacing:-.05em;color:#6d5547}
-.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.gallery-group-men .gallery-grid{max-width:560px;margin:0 auto;grid-template-columns:repeat(2,minmax(0,1fr))}
+.gallery-grid{--gallery-gap:12px;display:grid;max-width:560px;margin:0 auto;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gallery-gap)}
+.gallery-group:not(.gallery-group-men) .gallery-item:last-child{grid-column:1/-1;justify-self:center;width:calc((100% - var(--gallery-gap))/2)}
 .gallery-item{position:relative;border:0;border-radius:13px;overflow:hidden;background:#eee2d7;padding:0;cursor:zoom-in;transition:transform .3s,box-shadow .3s}
 .gallery-item::after{content:'↗';position:absolute;right:11px;bottom:11px;display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:rgba(255,250,245,.92);color:#765847;font-size:15px}
 .gallery-item img{display:block;width:100%;aspect-ratio:4/5;object-fit:contain;background:#e5d7cb}
@@ -259,7 +259,7 @@ button{cursor:pointer}
   .process-photo img{height:320px}
   .process-list article{grid-template-columns:43px 1fr}
   .process-list h3{font-size:18px}
-  .gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .gallery-grid{--gallery-gap:10px}
   .gallery-group + .gallery-group{margin-top:30px}
   .gallery-group h3{font-size:21px}
   .gallery-outro{display:block}
