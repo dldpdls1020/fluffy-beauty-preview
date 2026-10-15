@@ -334,6 +334,8 @@ button{cursor:pointer}
 .classic-hero h1 em{display:block;margin-top:12px;font:inherit;font-size:1.18em;color:inherit}
 .classic-hero-intro{font-size:14px;line-height:1.85;color:#806c60;letter-spacing:-.035em;margin-bottom:20px}
 .classic-hero-intro strong{font-weight:700;color:#765849}
+.classic-hero-intro .hero-warning{display:block;margin-bottom:9px;font-size:1.35em;line-height:1.5}
+.classic-hero-intro .hero-photo-emphasis{font-weight:700}
 .classic-hero-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
 .classic-hero-actions .pill-button{min-width:225px;box-shadow:0 13px 28px rgba(159,115,87,.15)}
 .classic-hero-actions .under-link{color:#866653;white-space:nowrap}
