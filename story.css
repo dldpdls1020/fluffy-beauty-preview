@@ -332,6 +332,7 @@ button{cursor:pointer}
 .classic-hero h1 .hero-quote{font-size:.86em}
 .classic-hero h1 .hero-thought{font-size:.96em}
 .classic-hero h1 em{display:block;margin-top:12px;font:inherit;font-size:1.18em;color:inherit}
+.classic-hero h1 em::after{content:"";display:block;width:68px;height:1px;margin-top:14px;background:rgba(108,85,72,.3)}
 .classic-hero-intro{font-size:14px;line-height:1.85;color:#806c60;letter-spacing:-.035em;margin-bottom:20px}
 .classic-hero-intro strong{font-weight:700;color:#765849}
 .classic-hero-intro .hero-warning{display:block;margin-bottom:9px;font-size:1.35em;line-height:1.5}
