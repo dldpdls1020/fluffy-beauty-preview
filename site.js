@@ -1,4 +1,30 @@
 const galleryItems = [...document.querySelectorAll('.gallery-item')];
+
+// Record every link and button click. Consultation and booking clicks also get
+// their own events so they can be measured separately from browsing the site.
+document.addEventListener('click', event => {
+  if (!(event.target instanceof Element)) return;
+  const control = event.target.closest('a[href], button');
+  if (!control || typeof window.fbq !== 'function') return;
+
+  const label = (control.getAttribute('aria-label') || control.textContent || '')
+    .replace(/\s+/g, ' ').trim().slice(0, 100);
+  const section = control.closest('section[id], header, footer, nav');
+  const href = control instanceof HTMLAnchorElement ? control.href : '';
+  const details = {
+    button_name: label,
+    button_location: section?.id || section?.tagName.toLowerCase() || 'page',
+    button_destination: href ? new URL(href).host : '',
+  };
+
+  window.fbq('trackCustom', 'ButtonClick', details);
+  if (href.startsWith('https://pf.kakao.com/')) {
+    window.fbq('trackCustom', 'KakaoConsultationClick', details);
+  } else if (href.startsWith('https://booking.naver.com/')) {
+    window.fbq('trackCustom', 'NaverBookingClick', details);
+  }
+});
+
 const galleryDialog = document.querySelector('#gallery-dialog');
 const galleryLarge = document.querySelector('#gallery-large');
 const galleryCount = document.querySelector('#gallery-count');
