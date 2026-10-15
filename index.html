@@ -7,6 +7,18 @@
   <meta name="description" content="김민선 원장의 1:1 눈썹 디자인. 실제 시술 사진을 보고, 내 얼굴에 어울리는 결을 상담해보세요.">
   <meta name="robots" content="noindex, nofollow">
   <title>자연스럽게, 나답게 | 플러피뷰티 김민선 원장</title>
+  <script>
+    // A fresh visit or refresh starts at the hero, even from an old section link.
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    if (location.hash) history.replaceState(history.state, '', location.pathname + location.search);
+    window.addEventListener('pageshow', () => {
+      const root = document.documentElement;
+      const previousBehavior = root.style.scrollBehavior;
+      root.style.scrollBehavior = 'auto';
+      window.scrollTo(0, 0);
+      root.style.scrollBehavior = previousBehavior;
+    });
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&family=Noto+Serif+KR:wght@400;500;600&display=swap" rel="stylesheet">
