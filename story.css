@@ -333,7 +333,7 @@ button{cursor:pointer}
 .classic-hero h1 .hero-thought{font-size:.96em}
 .classic-hero h1 em{display:block;margin-top:12px;font:inherit;font-size:1.18em;color:inherit}
 .classic-hero h1 em::after{content:"";display:block;width:68px;height:1px;margin-top:14px;background:rgba(108,85,72,.3)}
-.classic-hero-intro{font-size:14px;line-height:1.85;color:#806c60;letter-spacing:-.035em;margin-bottom:20px}
+.classic-hero-intro{font-size:14px;line-height:1.85;color:#806c60;letter-spacing:-.035em;margin-bottom:34px}
 .classic-hero-intro strong{font-weight:700;color:#765849}
 .classic-hero-intro .hero-warning{display:block;margin-bottom:9px;font-size:1.35em;line-height:1.5}
 .classic-hero-intro .hero-photo-emphasis{font-weight:700}
@@ -405,7 +405,7 @@ button{cursor:pointer}
   .classic-hero-copy{margin:0;padding:24px 5px 0}
   .classic-eyebrow{font-size:9px;margin-bottom:12px}
   .classic-hero h1{font-size:clamp(30px,7.8vw,39px);margin-bottom:17px}
-  .classic-hero-intro{font-size:13px;line-height:1.9;margin-bottom:18px}
+  .classic-hero-intro{font-size:13px;line-height:1.9;margin-bottom:32px}
   .classic-hero-actions{display:flex;flex-direction:column;align-items:center;gap:0}
   .classic-hero-actions .pill-button{width:100%;max-width:360px}
   .classic-hero-actions .under-link{display:inline-block;margin-top:14px}
