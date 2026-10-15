@@ -331,7 +331,7 @@ button{cursor:pointer}
 .classic-hero h1{font:400 38px/1.34 var(--kserif);letter-spacing:-.065em;color:#604b41;margin:0 0 22px;white-space:nowrap}
 .classic-hero h1 .hero-quote{font-size:.86em}
 .classic-hero h1 .hero-thought{font-size:.96em}
-.classic-hero h1 em{font:inherit;font-size:1.18em;color:inherit}
+.classic-hero h1 em{display:block;margin-top:12px;font:inherit;font-size:1.18em;color:inherit}
 .classic-hero-intro{font-size:14px;line-height:1.85;color:#806c60;letter-spacing:-.035em;margin-bottom:20px}
 .classic-hero-intro strong{font-weight:700;color:#765849}
 .classic-hero-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
