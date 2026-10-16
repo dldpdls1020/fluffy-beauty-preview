@@ -4,7 +4,7 @@ const galleryItems = [...document.querySelectorAll('.gallery-item')];
 // their own events so they can be measured separately from browsing the site.
 document.addEventListener('click', event => {
   if (!(event.target instanceof Element)) return;
-  const control = event.target.closest('a[href], button');
+  const control = event.target.closest('a[href], button, summary');
   if (!control || typeof window.fbq !== 'function') return;
 
   const label = (control.getAttribute('aria-label') || control.textContent || '')

@@ -325,8 +325,8 @@ button{cursor:pointer}
 .original-header .header-link{margin-left:0;padding:10px 18px;border-radius:999px;background:#b99379;color:#fff;box-shadow:0 7px 20px rgba(150,109,83,.12);transition:background .25s ease,transform .25s ease}
 .original-header .header-link:hover{background:#a78068;text-decoration:none;transform:translateY(-2px)}
 .classic-hero{max-width:960px;margin:0 auto;background:radial-gradient(circle at 78% 45%,#f4ebe3 0,#fbf7f3 58%);color:#6c5548;overflow:hidden}
-.classic-hero-inner{max-width:960px;min-height:560px;margin:auto;padding:40px 48px 20px;display:grid;grid-template-columns:50% 50%;align-items:center}
-.classic-hero-copy{position:relative;z-index:2;padding-bottom:45px}
+.classic-hero-inner{max-width:960px;min-height:560px;margin:auto;padding:40px 48px 20px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);column-gap:28px;align-items:center}
+.classic-hero-copy{position:relative;z-index:2;min-width:0}
 .classic-eyebrow{font:500 11px var(--sans);letter-spacing:.13em;color:#aa8d7a;margin-bottom:27px}
 .classic-hero h1{font:400 38px/1.34 var(--kserif);letter-spacing:-.065em;color:#604b41;margin:0 0 22px;white-space:nowrap}
 .classic-hero h1 .hero-quote{font-size:.86em}
@@ -371,7 +371,18 @@ button{cursor:pointer}
 .mood-film-copy h2 em{font-style:normal;color:#f4d7bd}
 .mood-film-copy>p:last-child{font-size:16px;line-height:1.85;color:#fff4eb}
 .mood-film figcaption{position:absolute;z-index:2;right:max(7vw,28px);bottom:23px;font-size:11px;line-height:1.7;color:#f1e3d7;text-align:right}
-@media(max-width:1000px){
+@media(min-width:761px) and (max-width:1000px){
+  .classic-hero-inner{padding:38px 34px 22px;column-gap:20px}
+  .classic-hero h1{font-size:clamp(29px,3.4vw,34px)}
+  .classic-hero-intro{font-size:12px;line-height:1.8}
+  .classic-hero-art{height:440px;min-width:0}
+  .classic-hero-circle{width:340px;height:340px;right:0;top:32px}
+  .classic-hero-photo{width:290px;height:410px}
+  .classic-hero-note{width:125px;height:118px;left:0;bottom:12px;padding:14px;border-radius:23px}
+  .classic-hero-note b{font-size:25px}
+  .classic-hero-bottom{padding:0 34px 22px}
+}
+@media(max-width:760px){
   .classic-hero-inner{display:flex;flex-direction:column-reverse;align-items:stretch;min-height:0;padding:22px 30px 38px}
   .classic-hero-art{height:540px;margin:0 auto;width:min(100%,600px)}
   .classic-hero-circle{right:12%}
@@ -380,8 +391,6 @@ button{cursor:pointer}
   .classic-hero-event{align-items:center;margin-right:auto;margin-left:auto;text-align:center}
   .classic-hero-actions{justify-content:center}
   .classic-hero-bottom{padding:0 30px 22px}
-}
-@media(max-width:760px){
   .mood-film-frame{height:100svh;min-height:0}
   .mood-film-copy{bottom:82px;padding:0 24px}
   .mood-film-copy .section-index{font-size:9px}
