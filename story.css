@@ -388,9 +388,10 @@ button{cursor:pointer}
   .classic-hero-circle{right:12%}
   .classic-hero-copy{max-width:650px;width:100%;margin:12px auto 0;padding:10px 0 0;text-align:center}
   .classic-hero h1{font-size:clamp(46px,6vw,64px)}
+  .classic-hero h1 em::after{margin-right:auto;margin-left:auto}
   .classic-hero-event{align-items:center;margin-right:auto;margin-left:auto;text-align:center}
   .classic-hero-actions{justify-content:center}
-  .classic-hero-bottom{padding:0 30px 22px}
+  .classic-hero-bottom{justify-content:center;padding:0 30px 22px;text-align:center}
   .mood-film-frame{height:100svh;min-height:0}
   .mood-film-copy{bottom:82px;padding:0 24px}
   .mood-film-copy .section-index{font-size:9px}
