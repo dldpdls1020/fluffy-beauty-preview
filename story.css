@@ -412,7 +412,7 @@ button{cursor:pointer}
   .classic-hero-note b{font-size:26px}
   .classic-hero-note span{font-size:8px}
   .classic-vertical-label{right:-33px;bottom:83px;font-size:7px}
-  .classic-hero-copy{margin:0;padding:24px 5px 0}
+  .classic-hero-copy{margin:0 auto;padding:24px 5px 0}
   .classic-eyebrow{font-size:9px;margin-bottom:12px}
   .classic-hero h1{font-size:clamp(30px,7.8vw,39px);margin-bottom:17px}
   .classic-hero-intro{font-size:13px;line-height:1.9;margin-bottom:32px}
